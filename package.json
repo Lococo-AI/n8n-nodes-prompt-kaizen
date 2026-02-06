@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://git.lococo.ai/lococo/product/lococo-ecosystem/suite/-/tree/main/prompt-kaizen/n8n-nodes-prompt-kaizen?ref_type=heads"
+		"url": "https://git.lococo.ai/lococo-public/n8n/n8n-nodes-prompt-kaizen"
 	},
 	"scripts": {
 		"build": "n8n-node build",
