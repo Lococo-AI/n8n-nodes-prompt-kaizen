@@ -1,0 +1,23 @@
+{
+    "node": "n8n-nodes-prompt-kaizen",
+    "nodeVersion": "1.0",
+    "categories": ["Productivity", "Development"],
+    "resources": {
+        "credentialDocumentation": [
+            {
+                "url": "https://prompt-kaizen.lococo.ai"
+            }
+        ],
+        "primaryDocumentation": [
+            {
+                "url": "https://prompt-kaizen.lococo.ai"
+            }
+        ],
+        "generic": [
+            {
+                "label": "Continuous improvement platform for AI agent prompts",
+                "url": "https://prompt-kaizen.lococo.ai"
+            }
+        ]
+    }
+}

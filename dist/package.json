@@ -1,0 +1,52 @@
+{
+    "name": "@lococo-ai/n8n-nodes-prompt-kaizen",
+    "version": "0.1.0",
+    "description": "Continuous improvement platform for AI agent prompts with version control, feedback collection, and AI-powered optimization",
+    "license": "MIT",
+    "homepage": "prompt-kaizen.lococo.ai",
+    "keywords": [
+        "n8n-community-node-package",
+        "prompt",
+        "AI"
+    ],
+    "author": {
+        "name": "elbtech GmbH",
+        "email": "n8n@elbtech.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://git.lococo.ai/lococo-public/n8n/n8n-nodes-prompt-kaizen"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "build:watch": "tsc --watch",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix",
+        "release": "n8n-node release",
+        "prepublishOnly": "n8n-node prerelease"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [
+            "dist/credentials/PromptKaizenApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/PromptKaizen/PromptKaizen.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "*",
+        "eslint": "9.32.0",
+        "prettier": "3.6.2",
+        "release-it": "^19.0.4",
+        "typescript": "5.9.2"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
+}
