@@ -1,18 +1,17 @@
 # n8n-nodes-prompt-kaizen
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
+This is an n8n community node. It lets you use Prompt Kaizen in your n8n workflows.
 
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+Prompt Kaizen is a continuous improvement platform for AI agent prompts with version control, feedback collection, and AI-powered optimization.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Usage](#usage)
+[Installation](#installation)  
+[Operations](#operations)  
+[Credentials](#credentials)  
+[Compatibility](#compatibility)  
+[Usage](#usage)  
 [Resources](#resources)
-[Version history](#version-history)
 
 ## Installation
 
@@ -20,27 +19,55 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-_List the operations supported by your node._
+**Prompt**
+
+- **Get Prompt**: Retrieve and render a prompt with version control support
+  - Fetch latest version, specific version, or version by tag
+  - Render templates with context variables
+  - Supports both static and template-based prompts
+- **Submit Feedback**: Submit feedback for a prompt version
+  - Rate prompts (1-5 scale)
+  - Add comments and test scenarios
+  - Track actual vs expected outputs
 
 ## Credentials
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+To use this node, you need a Prompt Kaizen account with API access.
+
+1. Sign up at [prompt-kaizen.lococo.ai](https://prompt-kaizen.lococo.ai)
+2. Generate an API key from your account settings
+3. In n8n, create new Prompt Kaizen API credentials:
+   - **API Key**: Your Prompt Kaizen API key
+   - **Base URL**: `https://prompt-kaizen.lococo.ai/api` (default)
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
+Minimum n8n version: 1.0.0
+
+Tested against n8n version: 1.0.0+
 
 ## Usage
 
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
+### Get Prompt Example
 
-_By the time users are looking for community nodes, they probably already know n8n basics. But if you expect new users, you can link to the [Try it out](https://docs.n8n.io/try-it-out/) documentation to help them get started._
+1. Select **Get Prompt** operation
+2. Choose a prompt from your workspace
+3. Select version strategy:
+   - **Latest Version**: Always use the most recent version
+   - **Specific Version**: Pin to a specific version number
+   - **By Tag**: Use tagged versions (e.g., "production", "staging")
+4. For template prompts, provide **Context Variables** as JSON to render dynamic content
+
+### Submit Feedback Example
+
+1. Select **Submit Feedback** operation
+2. Choose the prompt and version
+3. Provide a rating (1-5)
+4. Optionally add comments and test scenarios to help improve the prompt
+
+This enables continuous improvement loops where AI agent outputs can be automatically evaluated and feedback collected to optimize prompts over time.
 
 ## Resources
 
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-* _Link to app/service documentation._
-
-## Version history
-
-_This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
+- [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
+- [Prompt Kaizen Documentation](https://prompt-kaizen.lococo.ai)
