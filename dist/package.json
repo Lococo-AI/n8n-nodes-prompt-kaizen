@@ -1,6 +1,6 @@
 {
     "name": "@lococo-ai/n8n-nodes-prompt-kaizen",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Continuous improvement platform for AI agent prompts with version control, feedback collection, and AI-powered optimization",
     "license": "MIT",
     "homepage": "prompt-kaizen.lococo.ai",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://git.lococo.ai/lococo-public/n8n/n8n-nodes-prompt-kaizen"
+        "url": "https://github.com/Lococo-AI/n8n-nodes-prompt-kaizen"
     },
     "scripts": {
         "build": "n8n-node build",
