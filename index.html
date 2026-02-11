@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Kaizen - Continuous Improvement for AI Prompts</title>
+  <meta name="description" content="Version, test, and systematically improve your AI prompts based on real user feedback and AI-driven insights.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="raccoon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="raccoon.svg" alt="Prompt Kaizen">
+        Prompt Kaizen
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="n8n-node.html">n8n Node</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>Prompt Kaizen</h1>
+    <p class="subtitle">Continuous Improvement for AI Prompts</p>
+    <p class="description">Version, test, and systematically improve your AI prompts based on real user feedback and AI-driven insights.</p>
+    <a href="https://lococo.ai" class="btn">Get Started </a>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Stop Guessing. Start Improving.</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/></svg></div>
+          <h3>Prompt Version Control</h3>
+          <p>Track every change with Docker-style versioning. Tag releases, maintain history, and roll back when needed.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <h3>Feedback Collection</h3>
+          <p>Capture user ratings and comments directly linked to prompt versions. See what works and what doesn't.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+          <h3>AI-Powered Improvements</h3>
+          <p>Get data-driven suggestions based on aggregated feedback patterns and best practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems -->
+  <section class="section bg-muted">
+    <div class="container">
+      <h2 class="section-title">The Problem with Ad-Hoc Prompting</h2>
+      <div class="problems-list">
+        <div class="problem-item">
+          <span class="problem-x"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+          <span>No visibility into what prompt versions are deployed</span>
+        </div>
+        <div class="problem-item">
+          <span class="problem-x"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+          <span>Changes based on hunches instead of data</span>
+        </div>
+        <div class="problem-item">
+          <span class="problem-x"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+          <span>Lost history when someone &ldquo;improves&rdquo; a prompt</span>
+        </div>
+        <div class="problem-item">
+          <span class="problem-x"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span>
+          <span>No way to track which version caused issues</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Integrate Anywhere</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>REST API</h3>
+          <p>Direct API access for any application. Manage prompts, versions, and feedback programmatically.</p>
+        </div>
+        <div class="card">
+          <h3>MCP</h3>
+          <p>Model Context Protocol for AI systems. Let your AI agents fetch and improve prompts natively.</p>
+        </div>
+        <div class="card">
+          <h3>n8n</h3>
+          <p>Workflow automation and pipelines. Build continuous improvement loops with the <a href="n8n-node.html">community node</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta container">
+    <h2>Ready to improve?</h2>
+    <p>Start versioning and improving your prompts today.</p>
+    <a href="https://lococo.ai" class="btn">Get Started Free</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <p>Built by <a href="https://lococo.ai">Lococo</a></p>
+  </footer>
+
+</body>
+</html>
